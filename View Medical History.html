@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!--  upper navbar  -->
+    <style>
+        .navbar {
+            background-color: #2c3e50;
+        }
+        .navbar-brand img {
+            height: 50px;
+        }
+        .navbar-nav .nav-item {
+            margin-right: 20px;
+        }
+        .profile-pic {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+        .language-button, .login-button {
+            color: white;
+            background-color: #2c3e50;
+            border: none;
+        }
+        .secondary-header {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .secondary-header img {
+            height: 40px;
+        }
+        </style>
+        <!-- /* lower navbar */ -->
+        <style>
+        .navbar-brand {
+        display: flex;
+        align-items: center;
+        }
+        
+        .navbar-brand img {
+        margin-right: 10px;
+        }
+        
+        .nav-link {
+        color: black !important;
+        }
+        
+        .nav-link:hover, .dropdown-item:hover {
+        color: #0056b3 !important; /* Change this to your preferred hover color */
+        text-decoration: underline;
+        }
+        
+        .dropdown-menu {
+        background-color: #f8f9fa;
+        }
+        
+        @media (max-width: 767px) {
+        .navbar-nav {
+        text-align: center;
+        }
+        }
+        </style>
+        
+<!-- /* footer */ -->
+<style>
+    footer.bg-dark {
+        background-color: #2c3e50 !important;
+    }
+    footer {
+    background-color: #1c5fa2; /* Dark blue color */
+    color: white; /* White text */
+    }
+    
+    footer a {
+    color: white; /* Light color for links */
+    }
+    
+    footer a:hover {
+    color: #f39c12; /* Orange color on hover */
+    }
+    
+    .footer-link {
+    color: white; /* Dark color for footer links */
+    text-decoration: none;
+    }
+    
+    .footer-link:hover {
+    color: #a696c8; /* Change color on hover */
+    }
+    
+    .social-link {
+    color: white; /* Dark color for social links */
+    text-decoration: none;
+    }
+    
+    .social-link:hover {
+    color: #a696c8; /* Change color on hover */
+    }
+    
+    
+    /* body {
+    background-color: #f8f9fa;
+    padding: 20px;
+    } */
+    .card {
+    margin: 20px 0;
+    }
+    .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    }
+    .card-text {
+    font-size: 1.25rem;
+    }
+    </style>  
+    <!------ css-->
+    <style>
+    
+      h1 {
+          text-align: center;
+          color: #333;
+      }
+      table {
+          width: 100%;
+          border-collapse: collapse;
+          margin-top: 20px;
+      }
+      table, th, td {
+          border: 1px solid #ddd;
+      }
+      th, td {
+          padding: 12px;
+          text-align: left;
+      }
+      th {
+          background-color: #f2f2f2;
+      }
+      .update-btn {
+          background-color: #4CAF50;
+          color: white;
+          padding: 10px 15px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          border-radius: 4px;
+          margin-top: 20px;
+      }
+      .update-btn:hover {
+          background-color: #45a049;
+      }
+  </style>
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">
+            <img src="govt logo.svg">
+        </a>
+        <div class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <button class="btn language-button">Language</button>
+                </li>
+                <li class="nav-item">
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                </li>
+                <li class="nav-item">
+                    <button class="btn login-button">
+                        <img src="https://via.placeholder.com/30" alt="Profile Picture" class="profile-pic">
+                        Profile
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="logo.png" width="50" height="40" alt="INTREGATED VACCINATION SYSTEM Bangladesh">
+          IVSB
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Vaccination Center
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Find Vaccination Center</a>
+                <a class="dropdown-item" href="#">Appointment for Center</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="doctorDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Doctor
+              </a>
+              <div class="dropdown-menu" aria-labelledby="doctorDropdown">
+                <a class="dropdown-item" href="#">Find Doctor</a>
+                <a class="dropdown-item" href="#">Appointment for Doctor</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="campaignDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Medical History
+              </a>
+              <div class="dropdown-menu" aria-labelledby="campaignDropdown">
+                <a class="dropdown-item" href="#">View History</a>
+                <a class="dropdown-item" href="#">Update History</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Campaign</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Vaccination History</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="doctorDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Register/Sign In
+                </a>
+                <div class="dropdown-menu" aria-labelledby="doctorDropdown">
+                  <a class="dropdown-item" href="#">Register</a>
+                  <a class="dropdown-item" href="#">Sign In</a>
+                </div>
+              </li>
+          </ul>
+        </div>
+      </nav>
+   <!-- jjjj -->
+   <div class="container">
+    <h1>Patient Medical History</h1>
+    
+    <table>
+        <tr>
+            <th>History ID</th>
+            <td>12345</td>
+        </tr>
+        <tr>
+            <th>Elderly NID</th>
+            <td>9876543210</td>
+        </tr>
+        <tr>
+            <th>Medical Condition</th>
+            <td>Diabetes</td>
+        </tr>
+        <tr>
+            <th>Allergies</th>
+            <td>Peanuts</td>
+        </tr>
+        <tr>
+            <th>Medication Name</th>
+            <td>Metformin</td>
+        </tr>
+        <tr>
+            <th>Medication Dosage</th>
+            <td>500mg</td>
+        </tr>
+        <tr>
+            <th>Medication Start Date</th>
+            <td>2024-01-15</td>
+        </tr>
+        <tr>
+            <th>Medication End Date</th>
+            <td>Ongoing</td>
+        </tr>
+        <tr>
+            <th>History Update</th>
+            <td>2024-09-01</td>
+        </tr>
+    </table>
+
+    <a href="file:///C:/Users/MOSTOFA%20FAHIM%20HASAN/OneDrive/Desktop/test/ivsb/Update%20Medical%20History.html" class="update-btn">Update History</a>
+</div>
+
+
+
+
+
+   <!-- jjjjj -->
+<!-- Footer -->
+<footer class="bg-dark text-center text-lg-start mt-5">
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4">
+                <h5 class="text-uppercase">Contact Us</h5>
+                <p>Email: info@ivsb.org</p>
+                <p>Phone: +1 (555) 123-4567</p>
+                <p>Address: 123 Vaccine St, Health City, Country</p>
+            </div>
+            <div class="col-lg-4 col-md-12 mb-4">
+                <h5 class="text-uppercase">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="footer-link">Home</a></li>
+                    <li><a href="#" class="footer-link">Find Vaccination Center</a></li>
+                    <li><a href="#" class="footer-link">Request Appointment</a></li>
+                    <li><a href="#" class="footer-link">Vaccination History</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-12 mb-4">
+                <h5 class="text-uppercase">Stay Informed</h5>
+                <form class="form-inline">
+                    <input type="email" class="form-control mb-2" placeholder="Subscribe for updates" aria-label="Subscribe">
+                    <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
+                </form>
+                <h5 class="mt-3">Follow Us</h5>
+                <a href="#" class="social-link">Facebook</a> | 
+                <a href="#" class="social-link">Twitter</a> | 
+                <a href="#" class="social-link">Instagram</a>
+            </div>
+        </div>
+    </div>
+    <div class="text-center p-3">
+        <p>&copy; 2024 IVSB. All rights reserved.</p>
+    </div>
+</footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
